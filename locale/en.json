@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Context reset",
+    "description": "The model saves a handoff brief into AGENTS.md, then the whole conversation is swapped for that brief without calling a model, so a long project stops burning the context window.",
+    "detail": "Long sessions keep every tool result in the window. This bundle adds a `context_save` tool and a `/handoff` command: the model writes a brief (goal, done, todo, key files and decisions), the plugin stores it in the managed block of `<project>/AGENTS.md` and in `.dsh/context/state.md`, then replaces every non-system node of the session surface with one short handoff message. The replacement only writes session events — no model call, no tokens spent."
+  }
+}

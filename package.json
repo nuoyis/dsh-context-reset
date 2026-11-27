@@ -1,0 +1,43 @@
+{
+  "name": "@nuoyis/dsh-context-reset",
+  "version": "0.2.0",
+  "type": "module",
+  "description": "Context reset for DeepSeek Harness: the model writes a handoff brief to AGENTS.md, then the conversation surface is replaced by that brief without calling a model, so long sessions stop burning the context window.",
+  "author": "nuoyis",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon.svg": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "context",
+    "compaction",
+    "handoff",
+    "context-window",
+    "token-budget"
+  ]
+}

@@ -1,0 +1,9 @@
+# dsh-context-reset bundle patch: mount the host-plane plugin row.
+# Author: nuoyis. Package: @nuoyis/dsh-context-reset (`nuoyis/dsh-context-reset`).
+#
+# One entry only. The plugin registers a tool (`context_save`), a command
+# (`/handoff`) and listens to `agent/status`; nothing else in the profile is
+# reconfigured. Removing the bundle removes all three.
+- insert:
+    - id: context-reset
+      name: '@nuoyis/dsh-context-reset'
