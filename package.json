@@ -5,6 +5,14 @@
   "description": "Context reset for DeepSeek Harness: the model writes a handoff brief to AGENTS.md, then the conversation surface is replaced by that brief without calling a model, so long sessions stop burning the context window.",
   "author": "nuoyis",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nuoyis/dsh-context-reset.git"
+  },
+  "homepage": "https://github.com/nuoyis/dsh-context-reset#readme",
+  "bugs": {
+    "url": "https://github.com/nuoyis/dsh-context-reset/issues"
+  },
   "publishConfig": {
     "access": "public"
   },
